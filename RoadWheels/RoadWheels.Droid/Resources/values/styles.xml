@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<resources>
+  <style name="MyTheme" parent="MyTheme.Base">
+  </style>
+  <!-- Base theme applied no matter what API -->
+  <style name="MyTheme.Base" parent="Theme.AppCompat.Light.DarkActionBar">
+    <!-- Customize your theme here. -->
+    <item name="colorPrimary">@color/colorPrimary</item>
+    <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+    <item name="colorAccent">@color/colorAccent</item>
+   
+  </style>
+
+  <style name="MyTheme.NoActionBar">
+    <item name="windowActionBar">false</item>
+    <item name="windowNoTitle">true</item>
+  </style>
+  <style name="MyTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+  <style name="MyTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+  <!-- Splash Screen Theme 
+  <style name="MyTheme.Splash" parent ="Theme.AppCompat.Light">
+    <item name="android:windowBackground">@drawable/splash_screen</item>
+    <item name="android:windowNoTitle">true</item>
+  </style>-->
+  <style name="NavigationDrawerStyle">
+    <item name="android:textStyle">normal</item>
+  </style>
+  
+  <!-- ToolBar colors selection -->
+  <style name="ToolBarStyle" parent="Theme.AppCompat">
+    <item name="android:textColorPrimary">@android:color/white</item>
+    <item name="android:textColorSecondary">@android:color/white</item>
+    <item name="actionMenuTextColor">@android:color/white</item>
+
+  </style>
+  <!-- rating bar style selection -->
+  <style name="RatingBar" parent="@android:style/Widget.Holo.RatingBar.Small">
+    <item name="colorControlNormal">@color/colorAccent</item>
+    <item name="colorControlActivated">@color/colorPrimaryDark</item>
+  </style>
+
+
+</resources>

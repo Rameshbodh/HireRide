@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+  <item
+      android:id="@+id/bottomBarhome"
+      android:icon="@raw/home"
+      android:title="Home" />
+  
+  <item
+      android:id="@+id/bottomBarProfile"
+      android:icon="@raw/profile"
+      android:title="Profile" />
+  <item
+      android:id="@+id/bottomBarNotification"
+      android:icon="@raw/notification"
+      android:title="Notification" />
+
+</menu>

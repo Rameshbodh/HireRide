@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#FFFFFF"
+    android:layout_marginBottom="2dp">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:src="@raw/vendor"
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:layout_marginLeft="5dp"
+            android:id="@+id/siblImage" />
+        <TextView
+            android:text="Ashish Kumar Rena"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/siblImage"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:fontFamily="sans-serif"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="10dp"
+            android:id="@+id/siblBikeName" />
+        <TextView
+            android:text="Manali"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/siblBikeName"
+            android:layout_toRightOf="@id/siblImage"
+            android:textStyle="normal"
+            android:textSize="14sp"
+            android:fontFamily="sans-serif"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="5dp"
+            android:id="@+id/siblBikeLocation" />
+        <TextView
+            android:text="250/pr"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/siblBikeLocation"
+            android:layout_toRightOf="@id/siblImage"
+            android:textStyle="normal"
+            android:textSize="14sp"
+            android:fontFamily="sans-serif"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="3dp"
+            android:layout_marginBottom="10dp"
+            android:id="@+id/siblBikeDealerName" />
+        <TextView
+            android:text="Rent charges "
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="20dp"
+            android:layout_below="@id/siblImage"
+            android:id="@+id/siblBikeRate" />
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:layout_marginTop="5dp"
+            android:layout_below="@id/siblBikeRate"
+            android:weightSum="2">
+            <TextView
+                android:text="Text "
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:gravity="center"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:ems="15"
+                android:layout_weight="1"
+                android:id="@+id/siblBikeRatePerhour" />
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="#F5F5F5" />
+            <TextView
+                android:text="Text "
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:gravity="center"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:ems="15"
+                android:layout_weight="1"
+                android:id="@+id/siblBikeRatePerDay" />
+        </LinearLayout>
+      <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        />
+    </RelativeLayout>
+</FrameLayout>

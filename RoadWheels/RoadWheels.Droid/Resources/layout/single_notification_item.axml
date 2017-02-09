@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="3dp"
+    android:background="#FFFFFF">
+    <refractored.controls.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_height="70dp"
+        android:layout_width="70dp"
+        android:layout_marginLeft="5dp"
+        android:id="@+id/notificationImageView" />
+    <TextView
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:text="Title"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:layout_toRightOf="@id/notificationImageView"
+        android:layout_marginLeft="10dp"
+        android:id="@+id/notificationTitle" />
+    <TextView
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_toRightOf="@id/notificationImageView"
+        android:text="12-Jan-2017"
+        android:textSize="10sp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="5dp"
+        android:id="@+id/notificationDate"
+        android:layout_below="@id/notificationTitle" />
+    <TextView
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_below="@id/notificationImageView"
+        android:text="Description"
+        android:textSize="12sp"
+        android:layout_marginTop="10dp"
+        android:id="@+id/notificationDiscription" />
+</RelativeLayout>

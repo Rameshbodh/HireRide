@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <android.support.v4.view.ViewPager
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/roadwheelsImagePagerContainer" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="-10dp"
+        android:gravity="center"
+        android:id="@+id/roadwheelsDotsContainer" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:weightSum="10"
+        android:layout_gravity="bottom">
+        <Button
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="Register"
+            android:layout_weight="5"
+            android:background="@drawable/register_button_style"
+            android:id="@+id/registerUser" />
+        <Button
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="Login"
+            android:layout_weight="5"
+            android:background="@drawable/register_button_style"
+            android:id="@+id/loginUser" />
+    </LinearLayout>
+</FrameLayout>

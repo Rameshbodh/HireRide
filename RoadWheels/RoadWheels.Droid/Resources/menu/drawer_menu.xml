@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<menu  xmlns:android="http://schemas.android.com/apk/res/android">
+  <group android:checkableBehavior="single">
+    <item
+        android:id="@+id/homeid"
+        android:title="Home"
+       />
+    <item
+        android:id="@+id/myridesId"
+       
+        android:title="My Rides"
+       />
+    <item
+          android:id="@+id/offerId"
+        
+         android:title="Offers" />
+    <item
+      android:id="@+id/settingsid"
+      
+      android:title="Settings" />
+    <item
+     android:id="@+id/faq"
+     
+     android:title="FAQ" />
+    <item
+      android:id="@+id/aboutusid"
+      android:title="About us" />
+    
+  </group>
+ 
+
+</menu>
