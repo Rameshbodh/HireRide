@@ -47,19 +47,19 @@ namespace RoadWheels.Droid
                 
                     if (userPassword.Text == e.Text.ToString())
                     {
-                userReEnteredPassword.SetCompoundDrawablesWithIntrinsicBounds(0, 0, Resource.Raw.ic_tick, 0);
-                FindViewById<TextView>(Resource.Id.urcheckPassword).Visibility = ViewStates.Gone;
-            }
+                        userReEnteredPassword.SetCompoundDrawablesWithIntrinsicBounds(0, 0, Resource.Raw.ic_tick, 0);
+                        FindViewById<TextView>(Resource.Id.urcheckPassword).Visibility = ViewStates.Gone;
+                   }
                     else
                     {
-                userReEnteredPassword.SetCompoundDrawablesWithIntrinsicBounds(0, 0, 0, 0);
-                FindViewById<TextView>(Resource.Id.urcheckPassword).Visibility = ViewStates.Visible;
+                        userReEnteredPassword.SetCompoundDrawablesWithIntrinsicBounds(0, 0, 0, 0);
+                        FindViewById<TextView>(Resource.Id.urcheckPassword).Visibility = ViewStates.Visible;
                     }
         }
 
         private void RegisterBtn_Click(object sender, EventArgs e)
         {
-            
+            StartActivity(typeof(HomePage));
         }
 
         public override bool OnOptionsItemSelected(IMenuItem item)

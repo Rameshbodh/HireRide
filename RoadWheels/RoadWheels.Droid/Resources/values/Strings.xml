@@ -3,6 +3,7 @@
 	<string name="hello">Hello World, Click Me!</string>
 	<string name="app_name">RoadWheels.Droid</string>
   <string name="facebook_app_id">1635476416748012</string>
-<string name="drawer_open">open</string>
-<string name="drawer_close">close</string>
+  <string name="drawer_open">open</string>
+  <string name="drawer_close">close</string>
+  <string name="Rs">\u20B9</string>
 </resources>

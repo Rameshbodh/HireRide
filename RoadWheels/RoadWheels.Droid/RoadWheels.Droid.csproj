@@ -339,6 +339,11 @@
     <AndroidResource Include="Resources\raw\bike10.png" />
     <AndroidResource Include="Resources\raw\bike1.png" />
     <AndroidResource Include="Resources\raw\bike2.png" />
+    <AndroidResource Include="Resources\drawable\ridelist_button_selector.xml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\drawable\light_button_style.xml" />
+    <AndroidResource Include="Resources\drawable\dark_button_style.xml" />
   </ItemGroup>
   <ItemGroup>
     <XamarinComponentReference Include="facebookandroid">

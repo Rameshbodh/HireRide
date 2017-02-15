@@ -166,13 +166,13 @@ namespace RoadWheels.Droid
             vh.bikeName.Text = bikeNames[position];
             vh.bikeVendorName.Text = "by "+bikeVendor[position];
             vh.bikeLocation.Text = bikeLocation[position];
-            vh.rentChargersPerDay.Text = bikeRatePerDay[position]+"  / day";
-            vh.rentChargesPerHour.Text = bikeRatePerHour[position]+"  / hour";
+            vh.rentChargersPerDay.Text =this.context.Resources.GetString(Resource.String.Rs)+""+ bikeRatePerDay[position]+"  /day";
+            vh.rentChargesPerHour.Text = this.context.Resources.GetString(Resource.String.Rs) + "" + bikeRatePerHour[position]+"  /hour";
         }
 
         public override RecyclerView.ViewHolder OnCreateViewHolder(ViewGroup parent, int viewType)
         {
-            View itemView = LayoutInflater.From(parent.Context).Inflate(Resource.Layout.single_item_bike_list, parent, false);
+            View itemView = LayoutInflater.From(parent.Context).Inflate(Resource.Layout.single_item_bike_list_relative, parent, false);
             return new BikeListViewHolder(itemView, OnClick);
         }
        

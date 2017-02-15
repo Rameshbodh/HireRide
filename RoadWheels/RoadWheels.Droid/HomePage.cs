@@ -498,16 +498,16 @@ namespace RoadWheels.Droid
             catch (Exception ex)
             {
 
-                Android.Support.V7.App.AlertDialog.Builder alert = new Android.Support.V7.App.AlertDialog.Builder(this);
-                alert
-                  .SetTitle("ooops snap... ")
-                    .SetMessage("Grab a bottle of BEER...")
-                    .SetPositiveButton("Ok", (s, e) =>
-                    {
+                //Android.Support.V7.App.AlertDialog.Builder alert = new Android.Support.V7.App.AlertDialog.Builder(this);
+                //alert
+                //  .SetTitle("ooops snap... ")
+                //    .SetMessage("Grab a bottle of BEER...")
+                //    .SetPositiveButton("Ok", (s, e) =>
+                //    {
 
-                    });
-                alert.Create();
-                alert.Show();
+                //    });
+                //alert.Create();
+                //alert.Show();
                 Toast.MakeText(this, ""+ex.Message, ToastLength.Long).Show();
                 //textLocation.Text = "Unable to get location: " + ex.ToString();
             }
