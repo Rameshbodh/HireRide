@@ -154,6 +154,7 @@
     <Compile Include="BookingDetailsSchedule.cs" />
     <Compile Include="Common.cs" />
     <Compile Include="DateViewDialog.cs" />
+    <Compile Include="Gallery.cs" />
     <Compile Include="HomePage.cs" />
     <Compile Include="HomePageImageAdapter.cs" />
     <Compile Include="InternetConnectionState.cs" />
@@ -243,6 +244,16 @@
     <AndroidResource Include="Resources\layout-normal\single_item_bike_list.axml" />
     <AndroidResource Include="Resources\layout-large-port\single_item_bike_list.axml" />
     <AndroidResource Include="Resources\layout-xlarge-port\single_item_bike_list.axml" />
+    <AndroidResource Include="Resources\layout-small-port\single_item_bike_list_relative.axml" />
+    <AndroidResource Include="Resources\layout-normal-port\single_item_bike_list_relative.axml" />
+    <AndroidResource Include="Resources\layout-large-port\single_item_bike_list_relative.axml" />
+    <AndroidResource Include="Resources\layout-xlarge-port\single_item_bike_list_relative.axml" />
+    <AndroidResource Include="Resources\layout\single_item_gallery.axml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\layout\gallery.axml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
   </ItemGroup>
   <ItemGroup>
     <AndroidResource Include="Resources\layout\home_page.axml">
@@ -286,11 +297,6 @@
   <ItemGroup>
     <AndroidResource Include="Resources\drawable\unselectedDot.xml" />
     <AndroidResource Include="Resources\raw\image2.png" />
-    <AndroidResource Include="Resources\raw\ic_bike.png" />
-    <AndroidResource Include="Resources\raw\ic_location.png" />
-    <AndroidResource Include="Resources\raw\ic_service.png" />
-    <AndroidResource Include="Resources\raw\ic_tip.png" />
-    <AndroidResource Include="Resources\raw\ic_todo.png" />
   </ItemGroup>
   <ItemGroup>
     <AndroidResource Include="Resources\drawable\selectedDot.xml" />
@@ -357,6 +363,16 @@
     </AndroidResource>
     <AndroidResource Include="Resources\drawable\light_button_style.xml" />
     <AndroidResource Include="Resources\drawable\dark_button_style.xml" />
+    <AndroidResource Include="Resources\raw\ic_todo.png" />
+    <AndroidResource Include="Resources\raw\ic_bike.png" />
+    <AndroidResource Include="Resources\raw\ic_gallery.png" />
+    <AndroidResource Include="Resources\raw\ic_location.png" />
+    <AndroidResource Include="Resources\raw\ic_service.png" />
+    <AndroidResource Include="Resources\raw\ic_tips.png" />
+    <AndroidResource Include="Resources\raw\view4.jpg" />
+    <AndroidResource Include="Resources\raw\view1.jpg" />
+    <AndroidResource Include="Resources\raw\view2.jpg" />
+    <AndroidResource Include="Resources\raw\view3.jpg" />
   </ItemGroup>
   <ItemGroup>
     <XamarinComponentReference Include="facebookandroid">

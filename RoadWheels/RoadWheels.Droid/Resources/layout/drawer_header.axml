@@ -13,16 +13,13 @@
         android:layout_marginLeft="10dp"
         app:civ_border_width="2dp"
         app:civ_border_color="#F5F5F5" />
-  <com.facebook.login.widget.ProfilePictureView
+    <com.facebook.login.widget.ProfilePictureView
         android:id="@+id/facebook_profile_pic"
         android:layout_height="60dp"
         android:layout_width="60dp"
         android:layout_marginLeft="10dp"
         android:gravity="center_horizontal"
-        android:visibility="gone"
-         />
-  
-  
+        android:visibility="gone" />
     <LinearLayout
         android:id="@+id/drawerHeaderLayout"
         android:layout_width="wrap_content"

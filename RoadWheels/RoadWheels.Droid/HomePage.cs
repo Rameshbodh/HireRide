@@ -141,9 +141,9 @@ namespace RoadWheels.Droid
             // FindViewById<Button>(Resource.Id.button1).Click += HomePage_Click;
             iconList.Add(Resource.Raw.ic_bike);
             iconList.Add(Resource.Raw.ic_service);
-            iconList.Add(Resource.Raw.ic_tip);
+            iconList.Add(Resource.Raw.ic_tips);
             iconList.Add(Resource.Raw.ic_location);
-            iconList.Add(Resource.Raw.ic_bike);
+            iconList.Add(Resource.Raw.ic_gallery);
             iconList.Add(Resource.Raw.ic_todo);
 
             dotslayout = FindViewById<LinearLayout>(Resource.Id.HomePageDotsContainer);
@@ -263,35 +263,43 @@ namespace RoadWheels.Droid
         private void RVadapter_ItemClick(object sender, int e)
         {
             Toast.MakeText(this, "" + iconNameList[e], ToastLength.Long).Show();
-            if(iconNameList[e]== "Dealer near you")
+
+            switch(iconNameList[e])
             {
-                StartActivity(typeof(VendorList));
+                case "Dealer near you":
+                    StartActivity(typeof(VendorList));
+                    break;
+                case "Book Ride":
+                    typeRideList = new List<string>();
+                    typeRideImage = new List<int>();
+                    typeRideList.Add("Intant Ride");
+                    typeRideList.Add("Schedule Ride");
+                    typeRideImage.Add(Resource.Raw.ic_today);
+                    typeRideImage.Add(Resource.Raw.ic_planner);
+
+                    RoadWheelsCustomAdapter adapter = new RoadWheelsCustomAdapter(this, typeRideImage, typeRideList);
+
+
+                    Android.Support.V7.App.AlertDialog.Builder alert = new Android.Support.V7.App.AlertDialog.Builder(this);
+                    LayoutInflater inflater = LayoutInflater;
+                    View dialogLayout = inflater.Inflate(Resource.Layout.custom_alert_book_ride, null);
+                    RideTypeLV = dialogLayout.FindViewById<ListView>(Resource.Id.cabrSelectType);
+                    RideTypeLV.Adapter = adapter;
+
+                    RideTypeLV.ItemClick += RideTypeLV_ItemClick;
+
+                    alert.SetView(dialogLayout);
+                    dialog = alert.Create();
+                    dialog.Show();
+
+                    break;
+                case "Gallery":
+                    StartActivity(typeof(Gallery));
+                    break;
             }
-            if(iconNameList[e]== "Book Ride")
-            {
-                typeRideList = new List<string>();
-                typeRideImage = new List<int>();
-                typeRideList.Add("Intant Ride");
-                typeRideList.Add("Schedule Ride");
-                typeRideImage.Add(Resource.Raw.ic_today);
-                typeRideImage.Add(Resource.Raw.ic_planner);
 
-                RoadWheelsCustomAdapter adapter = new RoadWheelsCustomAdapter(this, typeRideImage, typeRideList);
-
-
-                Android.Support.V7.App.AlertDialog.Builder alert = new Android.Support.V7.App.AlertDialog.Builder(this);
-                LayoutInflater inflater = LayoutInflater;
-                View dialogLayout = inflater.Inflate(Resource.Layout.custom_alert_book_ride, null);
-                RideTypeLV = dialogLayout.FindViewById<ListView>(Resource.Id.cabrSelectType);
-                RideTypeLV.Adapter = adapter;
-
-                RideTypeLV.ItemClick += RideTypeLV_ItemClick;
-
-                alert.SetView(dialogLayout);
-                dialog = alert.Create();
-                dialog.Show();
-
-            }
+           
+           
         }
 
         private void RideTypeLV_ItemClick(object sender, AdapterView.ItemClickEventArgs e)
