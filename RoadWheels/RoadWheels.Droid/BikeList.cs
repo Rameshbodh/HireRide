@@ -19,8 +19,8 @@ namespace RoadWheels.Droid
     {
         List<int> bikeImage= new List<int>();
         List<string> bikeNames=new List<string>();
-        List<string> bikeVendor=new List<string>();
-        List<string> bikeLocation=new List<string>();
+      //  List<string> bikeVendor=new List<string>();
+       // List<string> bikeLocation=new List<string>();
         List<string> bikeRatePerHour=new List<string>();
         List<string> bikeRatePerDay=new List<string>();
 
@@ -64,27 +64,27 @@ namespace RoadWheels.Droid
 
 
 
-            bikeVendor.Add("Ducati");
-            bikeVendor.Add("BMW");
-            bikeVendor.Add("Aprilia");
-            bikeVendor.Add("MV Agustsa");
-            bikeVendor.Add("Kawasaki Ninja");
-            bikeVendor.Add("Yamaha");
-            bikeVendor.Add("Honda");
-            bikeVendor.Add("Suzuki");
-            bikeVendor.Add("MTT turbine");
-            bikeVendor.Add("Kawasaki ninja");
+            //bikeVendor.Add("Ducati");
+            //bikeVendor.Add("BMW");
+            //bikeVendor.Add("Aprilia");
+            //bikeVendor.Add("MV Agustsa");
+            //bikeVendor.Add("Kawasaki Ninja");
+            //bikeVendor.Add("Yamaha");
+            //bikeVendor.Add("Honda");
+            //bikeVendor.Add("Suzuki");
+            //bikeVendor.Add("MTT turbine");
+            //bikeVendor.Add("Kawasaki ninja");
 
-            bikeLocation.Add("Manali");
-            bikeLocation.Add("Chnadigarh");
-            bikeLocation.Add("Delhi");
-            bikeLocation.Add("Manali");
-            bikeLocation.Add("Chnadigarh");
-            bikeLocation.Add("Delhi");
-            bikeLocation.Add("Manali");
-            bikeLocation.Add("Chnadigarh");
-            bikeLocation.Add("Delhi");
-            bikeLocation.Add("Pune");
+            //bikeLocation.Add("Manali");
+            //bikeLocation.Add("Chnadigarh");
+            //bikeLocation.Add("Delhi");
+            //bikeLocation.Add("Manali");
+            //bikeLocation.Add("Chnadigarh");
+            //bikeLocation.Add("Delhi");
+            //bikeLocation.Add("Manali");
+            //bikeLocation.Add("Chnadigarh");
+            //bikeLocation.Add("Delhi");
+            //bikeLocation.Add("Pune");
 
             bikeRatePerHour.Add("500");
             bikeRatePerHour.Add("500");
@@ -108,10 +108,21 @@ namespace RoadWheels.Droid
             bikeRatePerDay.Add("20000");
             bikeRatePerDay.Add("30000");
 
-            BikeListAdapter adapter = new BikeListAdapter(this, bikeImage, bikeNames, bikeVendor, bikeLocation, bikeRatePerHour, bikeRatePerDay);
+            BikeListAdapter adapter = new BikeListAdapter(this, bikeImage, bikeNames, bikeRatePerHour, bikeRatePerDay);
 
             bikeListRV.SetAdapter(adapter);
 
+            adapter.ItemClick += Adapter_ItemClick;
+        }
+
+        private void Adapter_ItemClick(object sender, int position)
+        {
+            Common.selectedBikeImage = bikeImage[position];
+            Common.selectedBikeName = bikeNames[position];
+            Common.selectedBikeRatePerDay = bikeRatePerDay[position];
+            Common.selectedBikeRatePerHour = bikeRatePerHour[position];
+
+            StartActivity(typeof(BikeDetails));
         }
     }
 
@@ -120,24 +131,17 @@ namespace RoadWheels.Droid
         Context context;
         List<int> bikeImage;
         List<string> bikeNames;
-        List<string> bikeVendor;
-        List<string> bikeLocation;
         List<string> bikeRatePerHour;
         List<string> bikeRatePerDay;
+       
 
-        public BikeListAdapter(Context context,
-        List<int> bikeImage,
-        List<string> bikeNames,
-        List<string> bikeVendor,
-        List<string> bikeLocation,
-        List<string> bikeRatePerHour,
-        List<string> bikeRatePerDay)
+        
+
+        public BikeListAdapter(Context context, List<int> bikeImage, List<string> bikeNames, List<string> bikeRatePerHour, List<string> bikeRatePerDay)
         {
             this.context = context;
             this.bikeImage = bikeImage;
             this.bikeNames = bikeNames;
-            this.bikeVendor = bikeVendor;
-            this.bikeLocation = bikeLocation;
             this.bikeRatePerHour = bikeRatePerHour;
             this.bikeRatePerDay = bikeRatePerDay;
         }
@@ -164,8 +168,8 @@ namespace RoadWheels.Droid
             BikeListViewHolder vh = holder as BikeListViewHolder;
             vh.bikeImage.SetImageResource(bikeImage[position]);
             vh.bikeName.Text = bikeNames[position];
-            vh.bikeVendorName.Text = "by "+bikeVendor[position];
-            vh.bikeLocation.Text = bikeLocation[position];
+            //vh.bikeVendorName.Text = "by "+bikeVendor[position];
+            //vh.bikeLocation.Text = bikeLocation[position];
             vh.rentChargersPerDay.Text =this.context.Resources.GetString(Resource.String.Rs)+""+ bikeRatePerDay[position]+"  /day";
             vh.rentChargesPerHour.Text = this.context.Resources.GetString(Resource.String.Rs) + "" + bikeRatePerHour[position]+"  /hour";
         }
@@ -181,17 +185,17 @@ namespace RoadWheels.Droid
            public ImageView bikeImage { get; set; }
            public TextView bikeName { get; set; }
 
-           public TextView bikeLocation { get; set; }
+         //  public TextView bikeLocation { get; set; }
           
-          public TextView bikeVendorName { get; set; }
+         // public TextView bikeVendorName { get; set; }
           public  TextView rentChargesPerHour { get; set; }
           public  TextView rentChargersPerDay { get; set; }
             public BikeListViewHolder(View itemView,Action<int> listner):base(itemView)
             {
                 bikeImage = itemView.FindViewById<ImageView>(Resource.Id.siblImage);
                 bikeName = itemView.FindViewById<TextView>(Resource.Id.siblBikeName);
-                bikeLocation = itemView.FindViewById<TextView>(Resource.Id.siblBikeLocation);
-                bikeVendorName = itemView.FindViewById<TextView>(Resource.Id.siblBikeDealerName);
+              //  bikeLocation = itemView.FindViewById<TextView>(Resource.Id.siblBikeLocation);
+               // bikeVendorName = itemView.FindViewById<TextView>(Resource.Id.siblBikeDealerName);
                 rentChargesPerHour = itemView.FindViewById<TextView>(Resource.Id.siblBikeRatePerhour);
                 rentChargersPerDay = itemView.FindViewById<TextView>(Resource.Id.siblBikeRatePerDay);
                 ItemView.Click+= (s, e) => listner(AdapterPosition);

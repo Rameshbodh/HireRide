@@ -149,6 +149,7 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BikeDetails.cs" />
     <Compile Include="BikeList.cs" />
     <Compile Include="BookingDetailsSchedule.cs" />
     <Compile Include="Common.cs" />
@@ -232,6 +233,16 @@
     <AndroidResource Include="Resources\layout\single_item_bike_list_relative.axml">
       <SubType>Designer</SubType>
     </AndroidResource>
+    <AndroidResource Include="Resources\layout\bike_details.axml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\layout\single_item_bike_list.axml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\layout-small-port\single_item_bike_list.axml" />
+    <AndroidResource Include="Resources\layout-normal\single_item_bike_list.axml" />
+    <AndroidResource Include="Resources\layout-large-port\single_item_bike_list.axml" />
+    <AndroidResource Include="Resources\layout-xlarge-port\single_item_bike_list.axml" />
   </ItemGroup>
   <ItemGroup>
     <AndroidResource Include="Resources\layout\home_page.axml">
@@ -245,7 +256,9 @@
     <AndroidResource Include="Resources\drawable-xxxhdpi\Icon.png" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\values\colors.xml" />
+    <AndroidResource Include="Resources\values\colors.xml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
   </ItemGroup>
   <ItemGroup>
     <AndroidResource Include="Resources\values\styles.xml">

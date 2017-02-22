@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Description"
+            android:textSize="16sp"
+            android:fontFamily="sans-serif-light"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:paddingTop="10dp"
+            android:paddingLeft="10dp"
+            android:paddingBottom="10dp"
+            android:background="#FFFFFF"
+            android:elevation="1dp">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Brand"
+                android:fontFamily="sans-serif"
+                android:textStyle="bold" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="thunder bird"
+                android:layout_marginTop="5dp"
+                android:fontFamily="sans-serif"
+                android:id="@+id/bdbrand" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Type"
+                android:layout_marginTop="15dp"
+                android:fontFamily="sans-serif"
+                android:textStyle="bold" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="scooty"
+                android:layout_marginTop="5dp"
+                android:fontFamily="sans-serif"
+                android:id="@+id/bdtype" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Displacement"
+                android:layout_marginTop="15dp"
+                android:fontFamily="sans-serif"
+                android:textStyle="bold" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="displacement"
+                android:layout_marginTop="5dp"
+                android:fontFamily="sans-serif"
+                android:id="@+id/bddisplacment" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Fuel Capacity"
+                android:layout_marginTop="15dp"
+                android:fontFamily="sans-serif"
+                android:textStyle="bold" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="fuel capacity"
+                android:layout_marginTop="5dp"
+                android:fontFamily="sans-serif"
+                android:id="@+id/bdfuelcapacity" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Breaks"
+                android:layout_marginTop="15dp"
+                android:fontFamily="sans-serif"
+                android:textStyle="bold" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="breaks"
+                android:layout_marginTop="5dp"
+                android:fontFamily="sans-serif"
+                android:id="@+id/bdbreaks" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Engine Start"
+                android:layout_marginTop="15dp"
+                android:fontFamily="sans-serif"
+                android:textStyle="bold" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="engine start"
+                android:layout_marginTop="5dp"
+                android:fontFamily="sans-serif"
+                android:id="@+id/bdengine" />
+        </LinearLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Rent Discription"
+            android:textSize="16sp"
+            android:fontFamily="sans-serif-light"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginBottom="10dp"
+            android:paddingTop="10dp"
+            android:paddingLeft="10dp"
+            android:paddingBottom="10dp"
+            android:background="#FFFFFF"
+            android:elevation="1dp">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Rent Per Hour"
+                android:fontFamily="sans-serif"
+                android:textStyle="bold" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="2000 Rs"
+                android:layout_marginTop="5dp"
+                android:fontFamily="sans-serif"
+                android:id="@+id/bdrentprhour" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Rent Per Day"
+                android:layout_marginTop="15dp"
+                android:fontFamily="sans-serif"
+                android:textStyle="bold" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="6000 Rs"
+                android:layout_marginTop="5dp"
+                android:fontFamily="sans-serif"
+                android:id="@+id/bdrentperday" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Security Intricity"
+                android:layout_marginTop="15dp"
+                android:fontFamily="sans-serif"
+                android:textStyle="bold" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="security"
+                android:layout_marginTop="5dp"
+                android:fontFamily="sans-serif"
+                android:id="@+id/bdsecurityintricity" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Security Outricity"
+                android:layout_marginTop="15dp"
+                android:fontFamily="sans-serif"
+                android:textStyle="bold" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="60000 Rs"
+                android:layout_marginTop="5dp"
+                android:fontFamily="sans-serif"
+                android:id="@+id/bdsecurityoutricity" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Minimum Booking Per Day"
+                android:layout_marginTop="15dp"
+                android:fontFamily="sans-serif"
+                android:textStyle="bold" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="3000 Rs"
+                android:layout_marginTop="5dp"
+                android:fontFamily="sans-serif"
+                android:id="@+id/bdbookingperday" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Minimum Booking Per Hours  "
+                android:layout_marginTop="15dp"
+                android:fontFamily="sans-serif"
+                android:textStyle="bold" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="5000 Rs"
+                android:layout_marginTop="5dp"
+                android:fontFamily="sans-serif"
+                android:id="@+id/bdbookingperhrs" />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

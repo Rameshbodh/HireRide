@@ -24,6 +24,12 @@ namespace RoadWheels.Droid
 
         public static string selectedVendorRate { get; set; }
 
+        public static string selectedBikeName { get; set; }
+        public static int selectedBikeImage { get; set; }
+        
+        public static string selectedBikeRatePerDay { get; set; }
+        public static string selectedBikeRatePerHour { get; set; }
+
 
         public static bool SaveUserLocationLocality(Context context, string locationName, string locationValue)
         {
