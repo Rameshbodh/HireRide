@@ -12,6 +12,7 @@
         android:orientation="horizontal"
         android:layout_marginTop="-10dp"
         android:gravity="center"
+        android:layout_alignParentBottom="true"
         android:id="@+id/roadwheelsDotsContainer" />
     <LinearLayout
         android:orientation="horizontal"

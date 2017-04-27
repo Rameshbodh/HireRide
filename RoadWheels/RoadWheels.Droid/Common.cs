@@ -10,6 +10,7 @@ using Android.Runtime;
 using Android.Views;
 using Android.Widget;
 
+
 namespace RoadWheels.Droid
 {
     class Common
@@ -50,5 +51,6 @@ namespace RoadWheels.Droid
             return "";
         }
 
+       
     }
 }

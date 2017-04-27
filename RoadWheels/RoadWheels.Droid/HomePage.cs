@@ -24,6 +24,8 @@ using Toolbar = Android.Support.V7.Widget.Toolbar;
 using Android.Support.Design.Widget;
 using Xamarin.Facebook;
 using Xamarin.Facebook.Login.Widget;
+using Com.Bumptech.Glide;
+
 namespace RoadWheels.Droid
 {
 	[Activity (Label = "RoadWheels.Droid", Icon = "@drawable/icon", Theme = "@style/MyTheme.NoActionBar")]
@@ -49,7 +51,7 @@ namespace RoadWheels.Droid
         private RecyclerView.LayoutManager _layoutManager;
         List<int> imageList = new List<int>();
         List<int> iconList = new List<int>();
-        string[] iconNameList = new string[] {"Book Ride","Grab Service","Tips","Dealer near you","Gallery","Todo list" };
+        string[] iconNameList = new string[] {"Book Ride","My Ride","Grab Service","Gallery"};
         protected override void OnCreate(Bundle bundle)
         {
             base.OnCreate(bundle);
@@ -85,7 +87,7 @@ namespace RoadWheels.Droid
             mProfileTracker = new MyProfileTracker();
 
             SetContentView(Resource.Layout.home_page);
-            
+          
             toolbar = FindViewById<Toolbar>(Resource.Id.toolbar);
 
             SetSupportActionBar(toolbar);
@@ -140,16 +142,15 @@ namespace RoadWheels.Droid
 
             // FindViewById<Button>(Resource.Id.button1).Click += HomePage_Click;
             iconList.Add(Resource.Raw.ic_bike);
-            iconList.Add(Resource.Raw.ic_service);
-            iconList.Add(Resource.Raw.ic_tips);
-            iconList.Add(Resource.Raw.ic_location);
+            iconList.Add(Resource.Raw.ic_bike);
+            iconList.Add(Resource.Raw.ic_service);            
             iconList.Add(Resource.Raw.ic_gallery);
-            iconList.Add(Resource.Raw.ic_todo);
+            
 
             dotslayout = FindViewById<LinearLayout>(Resource.Id.HomePageDotsContainer);
             imagePager = FindViewById<ViewPager>(Resource.Id.homePageImagePagerContainer);
             homeRView = FindViewById<RecyclerView>(Resource.Id.homePageRView);
-            _layoutManager = new GridLayoutManager(this, 3);
+            _layoutManager = new GridLayoutManager(this, 2);
             homeRView.SetLayoutManager(_layoutManager);
 
             RecycleHomeIconAdapter RVadapter = new RecycleHomeIconAdapter(this, iconList, iconNameList);
@@ -264,7 +265,7 @@ namespace RoadWheels.Droid
         {
             Toast.MakeText(this, "" + iconNameList[e], ToastLength.Long).Show();
 
-            switch(iconNameList[e])
+            switch (iconNameList[e])
             {
                 case "Dealer near you":
                     StartActivity(typeof(VendorList));
@@ -298,8 +299,8 @@ namespace RoadWheels.Droid
                     break;
             }
 
-           
-           
+
+
         }
 
         private void RideTypeLV_ItemClick(object sender, AdapterView.ItemClickEventArgs e)
@@ -347,14 +348,14 @@ namespace RoadWheels.Droid
                     FindViewById<FrameLayout>(Resource.Id.homeFrameContainer).Visibility = ViewStates.Gone;
                     FindViewById<ViewPager>(Resource.Id.homePageImagePagerContainer).Visibility = ViewStates.Visible;
                     FindViewById<LinearLayout>(Resource.Id.HomePageDotsContainer).Visibility = ViewStates.Visible;
-                    FindViewById<RecyclerView>(Resource.Id.homePageRView).Visibility = ViewStates.Visible;
+                 //   FindViewById<RecyclerView>(Resource.Id.homePageRView).Visibility = ViewStates.Visible;
                     break;
 
                 case Resource.Id.bottomBarProfile:
                     // Toast.MakeText(this, "Profile", ToastLength.Long).Show();
                     FindViewById<ViewPager>(Resource.Id.homePageImagePagerContainer).Visibility = ViewStates.Gone;
                     FindViewById<LinearLayout>(Resource.Id.HomePageDotsContainer).Visibility = ViewStates.Gone;
-                    FindViewById<RecyclerView>(Resource.Id.homePageRView).Visibility = ViewStates.Gone;
+                  //  FindViewById<RecyclerView>(Resource.Id.homePageRView).Visibility = ViewStates.Gone;
                     SupportActionBar.Title = "Profile settings";
 
                     Profile profileFragment = new Profile();
@@ -369,7 +370,7 @@ namespace RoadWheels.Droid
                     SupportActionBar.Title = "Notification";
                     FindViewById<ViewPager>(Resource.Id.homePageImagePagerContainer).Visibility = ViewStates.Gone;
                     FindViewById<LinearLayout>(Resource.Id.HomePageDotsContainer).Visibility = ViewStates.Gone;
-                    FindViewById<RecyclerView>(Resource.Id.homePageRView).Visibility = ViewStates.Gone;
+                   // FindViewById<RecyclerView>(Resource.Id.homePageRView).Visibility = ViewStates.Gone;
                     FindViewById<FrameLayout>(Resource.Id.homeFrameContainer).Visibility = ViewStates.Visible;
                     SupportFragmentManager.BeginTransaction().Replace(Resource.Id.homeFrameContainer, new Notification()).Commit();
                     break;
@@ -683,7 +684,8 @@ namespace RoadWheels.Droid
             {
                 IconViewHolder vh = holder as IconViewHolder;
 
-                vh.icon.SetImageResource(iconList[position]);
+                Glide.With(this.context).Load(this.iconList[position]).Into(vh.icon);
+                // vh.icon.SetImageResource(iconList[position]);
                 vh.iconName.Text = iconNameList[position];
 
 

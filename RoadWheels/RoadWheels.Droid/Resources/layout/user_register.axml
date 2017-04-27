@@ -30,7 +30,7 @@
                 android:hint="Email ID"
                 android:textSize="14sp"
                 android:singleLine="true"
-                android:maxLines="1"/>
+                android:maxLines="1" />
         </android.support.design.widget.TextInputLayout>
         <android.support.design.widget.TextInputLayout
             android:layout_width="match_parent"
@@ -64,19 +64,17 @@
                 android:maxLines="1"
                 android:inputType="textPassword" />
         </android.support.design.widget.TextInputLayout>
-      <TextView
-        android:text="password did not match"
-        android:textColor="@color/red"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:visibility="gone"
-        android:textSize="10sp"
-        android:fontFamily="sans-serif-light"
-        android:layout_marginLeft="10dp"
-        android:layout_marginRight="10dp"
-        android:id="@+id/urcheckPassword"
-        />
-      
+        <TextView
+            android:text="password did not match"
+            android:textColor="@color/red"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:textSize="10sp"
+            android:fontFamily="sans-serif-light"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:id="@+id/urcheckPassword" />
         <android.support.design.widget.TextInputLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"

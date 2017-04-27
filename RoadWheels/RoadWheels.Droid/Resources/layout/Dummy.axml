@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#BAC559"
+    android:paddingTop="10dp"
+    android:paddingBottom="10dp">
+    <ImageView
+        android:id="@+id/hpv1bookrideIV"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:src="@raw/ic_gallery"
+        android:padding="10dp"
+      />
+    <TextView
+        android:id="@+id/sigName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:layout_toRightOf="@id/hpv1bookrideIV"
+        android:text="BOOK RIDE"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="@android:color/white" />
+</RelativeLayout>

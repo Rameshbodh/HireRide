@@ -11,6 +11,7 @@ using Android.Views;
 using Android.Widget;
 using Android.Support.V7.App;
 using Android.Support.V7.Widget;
+using Com.Bumptech.Glide;
 
 namespace RoadWheels.Droid
 {
@@ -166,7 +167,11 @@ namespace RoadWheels.Droid
         public override void OnBindViewHolder(RecyclerView.ViewHolder holder, int position)
         {
             BikeListViewHolder vh = holder as BikeListViewHolder;
-            vh.bikeImage.SetImageResource(bikeImage[position]);
+
+            Glide.With(this.context).Load(this.bikeImage[position]).CenterCrop().Into(vh.bikeImage);
+
+
+           // vh.bikeImage.SetImageResource(bikeImage[position]);
             vh.bikeName.Text = bikeNames[position];
             //vh.bikeVendorName.Text = "by "+bikeVendor[position];
             //vh.bikeLocation.Text = bikeLocation[position];
