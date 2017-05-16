@@ -3905,8 +3905,8 @@ namespace RoadWheels.Droid
 			// aapt resource value: 0x7f0b00bc
 			public const int HomePageDotsContainer = 2131427516;
 			
-			// aapt resource value: 0x7f0b010f
-			public const int aboutusid = 2131427599;
+			// aapt resource value: 0x7f0b0110
+			public const int aboutusid = 2131427600;
 			
 			// aapt resource value: 0x7f0b00c3
 			public const int action0 = 2131427523;
@@ -4067,17 +4067,17 @@ namespace RoadWheels.Droid
 			// aapt resource value: 0x7f0b002c
 			public const int bottom = 2131427372;
 			
+			// aapt resource value: 0x7f0b010a
+			public const int bottomBarNotification = 2131427594;
+			
 			// aapt resource value: 0x7f0b0109
-			public const int bottomBarNotification = 2131427593;
+			public const int bottomBarProfile = 2131427593;
 			
 			// aapt resource value: 0x7f0b0108
-			public const int bottomBarProfile = 2131427592;
+			public const int bottomBarhome = 2131427592;
 			
-			// aapt resource value: 0x7f0b0107
-			public const int bottomBarhome = 2131427591;
-			
-			// aapt resource value: 0x7f0b0105
-			public const int bottom_sheet = 2131427589;
+			// aapt resource value: 0x7f0b0106
+			public const int bottom_sheet = 2131427590;
 			
 			// aapt resource value: 0x7f0b003f
 			public const int box_count = 2131427391;
@@ -4220,8 +4220,8 @@ namespace RoadWheels.Droid
 			// aapt resource value: 0x7f0b00af
 			public const int facebook_profile_pic = 2131427503;
 			
-			// aapt resource value: 0x7f0b010e
-			public const int faq = 2131427598;
+			// aapt resource value: 0x7f0b010f
+			public const int faq = 2131427599;
 			
 			// aapt resource value: 0x7f0b0037
 			public const int fill = 2131427383;
@@ -4259,8 +4259,8 @@ namespace RoadWheels.Droid
 			// aapt resource value: 0x7f0b00b8
 			public const int homePageScrollingContent = 2131427512;
 			
-			// aapt resource value: 0x7f0b010a
-			public const int homeid = 2131427594;
+			// aapt resource value: 0x7f0b010b
+			public const int homeid = 2131427595;
 			
 			// aapt resource value: 0x7f0b00b3
 			public const int hpv1bookrideIV = 2131427507;
@@ -4313,20 +4313,20 @@ namespace RoadWheels.Droid
 			// aapt resource value: 0x7f0b004f
 			public const int list_item = 2131427407;
 			
+			// aapt resource value: 0x7f0b00f3
+			public const int loginFacebookBtn = 2131427571;
+			
 			// aapt resource value: 0x7f0b00f2
-			public const int loginFacebookBtn = 2131427570;
+			public const int loginGoogleBtn = 2131427570;
 			
 			// aapt resource value: 0x7f0b00f1
-			public const int loginGoogleBtn = 2131427569;
-			
-			// aapt resource value: 0x7f0b00f0
-			public const int loginSubmitBtn = 2131427568;
+			public const int loginSubmitBtn = 2131427569;
 			
 			// aapt resource value: 0x7f0b00d3
 			public const int loginUser = 2131427539;
 			
-			// aapt resource value: 0x7f0b0104
-			public const int main_content = 2131427588;
+			// aapt resource value: 0x7f0b0105
+			public const int main_content = 2131427589;
 			
 			// aapt resource value: 0x7f0b00c6
 			public const int media_actions = 2131427526;
@@ -4349,8 +4349,8 @@ namespace RoadWheels.Droid
 			// aapt resource value: 0x7f0b00d5
 			public const int my_text_view = 2131427541;
 			
-			// aapt resource value: 0x7f0b010b
-			public const int myridesId = 2131427595;
+			// aapt resource value: 0x7f0b010c
+			public const int myridesId = 2131427596;
 			
 			// aapt resource value: 0x7f0b00be
 			public const int nav_views = 2131427518;
@@ -4370,23 +4370,23 @@ namespace RoadWheels.Droid
 			// aapt resource value: 0x7f0b000f
 			public const int normal = 2131427343;
 			
-			// aapt resource value: 0x7f0b00e8
-			public const int notificationDate = 2131427560;
-			
 			// aapt resource value: 0x7f0b00e9
-			public const int notificationDiscription = 2131427561;
+			public const int notificationDate = 2131427561;
 			
-			// aapt resource value: 0x7f0b00e6
-			public const int notificationImageView = 2131427558;
-			
-			// aapt resource value: 0x7f0b00f3
-			public const int notificationListRecylceView = 2131427571;
+			// aapt resource value: 0x7f0b00ea
+			public const int notificationDiscription = 2131427562;
 			
 			// aapt resource value: 0x7f0b00e7
-			public const int notificationTitle = 2131427559;
+			public const int notificationImageView = 2131427559;
 			
-			// aapt resource value: 0x7f0b010c
-			public const int offerId = 2131427596;
+			// aapt resource value: 0x7f0b00f4
+			public const int notificationListRecylceView = 2131427572;
+			
+			// aapt resource value: 0x7f0b00e8
+			public const int notificationTitle = 2131427560;
+			
+			// aapt resource value: 0x7f0b010d
+			public const int offerId = 2131427597;
 			
 			// aapt resource value: 0x7f0b003c
 			public const int open_graph = 2131427388;
@@ -4427,8 +4427,8 @@ namespace RoadWheels.Droid
 			// aapt resource value: 0x7f0b00d0
 			public const int roadwheelsImagePagerContainer = 2131427536;
 			
-			// aapt resource value: 0x7f0b00fc
-			public const int rpLinearLayout = 2131427580;
+			// aapt resource value: 0x7f0b00fd
+			public const int rpLinearLayout = 2131427581;
 			
 			// aapt resource value: 0x7f0b0019
 			public const int screen = 2131427353;
@@ -4481,8 +4481,8 @@ namespace RoadWheels.Droid
 			// aapt resource value: 0x7f0b0076
 			public const int select_dialog_listview = 2131427446;
 			
-			// aapt resource value: 0x7f0b010d
-			public const int settingsid = 2131427597;
+			// aapt resource value: 0x7f0b010e
+			public const int settingsid = 2131427598;
 			
 			// aapt resource value: 0x7f0b0061
 			public const int shortcut = 2131427425;
@@ -4517,6 +4517,9 @@ namespace RoadWheels.Droid
 			// aapt resource value: 0x7f0b00de
 			public const int siblBooknow = 2131427550;
 			
+			// aapt resource value: 0x7f0b00e2
+			public const int siblFrame = 2131427554;
+			
 			// aapt resource value: 0x7f0b00d7
 			public const int siblImage = 2131427543;
 			
@@ -4529,23 +4532,23 @@ namespace RoadWheels.Droid
 			// aapt resource value: 0x7f0b00dc
 			public const int siblrLinearLayout01 = 2131427548;
 			
-			// aapt resource value: 0x7f0b00e2
-			public const int sibrtImage = 2131427554;
-			
 			// aapt resource value: 0x7f0b00e3
-			public const int sibrtText = 2131427555;
+			public const int sibrtImage = 2131427555;
+			
+			// aapt resource value: 0x7f0b00e4
+			public const int sibrtText = 2131427556;
 			
 			// aapt resource value: 0x7f0b00b4
 			public const int sigName = 2131427508;
 			
-			// aapt resource value: 0x7f0b00e5
-			public const int sigNameHolder = 2131427557;
+			// aapt resource value: 0x7f0b00e6
+			public const int sigNameHolder = 2131427558;
 			
 			// aapt resource value: 0x7f0b00bf
 			public const int sigcardview = 2131427519;
 			
-			// aapt resource value: 0x7f0b00e4
-			public const int sigimageview = 2131427556;
+			// aapt resource value: 0x7f0b00e5
+			public const int sigimageview = 2131427557;
 			
 			// aapt resource value: 0x7f0b0047
 			public const int small = 2131427399;
@@ -4628,56 +4631,56 @@ namespace RoadWheels.Droid
 			// aapt resource value: 0x7f0b0009
 			public const int up = 2131427337;
 			
-			// aapt resource value: 0x7f0b00f8
-			public const int upChangePassword = 2131427576;
-			
-			// aapt resource value: 0x7f0b00f4
-			public const int upImageId = 2131427572;
-			
-			// aapt resource value: 0x7f0b00fb
-			public const int upProfilePicFAB = 2131427579;
-			
 			// aapt resource value: 0x7f0b00f9
-			public const int upReenterPassword = 2131427577;
-			
-			// aapt resource value: 0x7f0b00fa
-			public const int upSave = 2131427578;
-			
-			// aapt resource value: 0x7f0b00f6
-			public const int upemail = 2131427574;
-			
-			// aapt resource value: 0x7f0b00f7
-			public const int upmobile = 2131427575;
-			
-			// aapt resource value: 0x7f0b0100
-			public const int urcheckPassword = 2131427584;
-			
-			// aapt resource value: 0x7f0b00fd
-			public const int uremailid = 2131427581;
-			
-			// aapt resource value: 0x7f0b0101
-			public const int urenterfullname = 2131427585;
-			
-			// aapt resource value: 0x7f0b0102
-			public const int urmobilenumber = 2131427586;
-			
-			// aapt resource value: 0x7f0b00ff
-			public const int urreenterpassword = 2131427583;
-			
-			// aapt resource value: 0x7f0b0103
-			public const int urregister = 2131427587;
-			
-			// aapt resource value: 0x7f0b00fe
-			public const int ursetpassword = 2131427582;
+			public const int upChangePassword = 2131427577;
 			
 			// aapt resource value: 0x7f0b00f5
-			public const int usFullName = 2131427573;
+			public const int upImageId = 2131427573;
+			
+			// aapt resource value: 0x7f0b00fc
+			public const int upProfilePicFAB = 2131427580;
+			
+			// aapt resource value: 0x7f0b00fa
+			public const int upReenterPassword = 2131427578;
+			
+			// aapt resource value: 0x7f0b00fb
+			public const int upSave = 2131427579;
+			
+			// aapt resource value: 0x7f0b00f7
+			public const int upemail = 2131427575;
+			
+			// aapt resource value: 0x7f0b00f8
+			public const int upmobile = 2131427576;
+			
+			// aapt resource value: 0x7f0b0101
+			public const int urcheckPassword = 2131427585;
+			
+			// aapt resource value: 0x7f0b00fe
+			public const int uremailid = 2131427582;
+			
+			// aapt resource value: 0x7f0b0102
+			public const int urenterfullname = 2131427586;
+			
+			// aapt resource value: 0x7f0b0103
+			public const int urmobilenumber = 2131427587;
+			
+			// aapt resource value: 0x7f0b0100
+			public const int urreenterpassword = 2131427584;
+			
+			// aapt resource value: 0x7f0b0104
+			public const int urregister = 2131427588;
+			
+			// aapt resource value: 0x7f0b00ff
+			public const int ursetpassword = 2131427583;
+			
+			// aapt resource value: 0x7f0b00f6
+			public const int usFullName = 2131427574;
 			
 			// aapt resource value: 0x7f0b0016
 			public const int useLogo = 2131427350;
 			
-			// aapt resource value: 0x7f0b00ee
-			public const int userEmailIdOrPhone = 2131427566;
+			// aapt resource value: 0x7f0b00ef
+			public const int userEmailIdOrPhone = 2131427567;
 			
 			// aapt resource value: 0x7f0b00ae
 			public const int userImage = 2131427502;
@@ -4688,23 +4691,23 @@ namespace RoadWheels.Droid
 			// aapt resource value: 0x7f0b00b1
 			public const int userName = 2131427505;
 			
-			// aapt resource value: 0x7f0b00ef
-			public const int userPassord = 2131427567;
-			
-			// aapt resource value: 0x7f0b00ea
-			public const int vendorImage = 2131427562;
-			
-			// aapt resource value: 0x7f0b0106
-			public const int vendorListRecylceView = 2131427590;
-			
-			// aapt resource value: 0x7f0b00ec
-			public const int vendorLocation = 2131427564;
+			// aapt resource value: 0x7f0b00f0
+			public const int userPassord = 2131427568;
 			
 			// aapt resource value: 0x7f0b00eb
-			public const int vendorName = 2131427563;
+			public const int vendorImage = 2131427563;
+			
+			// aapt resource value: 0x7f0b0107
+			public const int vendorListRecylceView = 2131427591;
 			
 			// aapt resource value: 0x7f0b00ed
-			public const int vendorPrice = 2131427565;
+			public const int vendorLocation = 2131427565;
+			
+			// aapt resource value: 0x7f0b00ec
+			public const int vendorName = 2131427564;
+			
+			// aapt resource value: 0x7f0b00ee
+			public const int vendorPrice = 2131427566;
 			
 			// aapt resource value: 0x7f0b00a2
 			public const int view = 2131427490;
